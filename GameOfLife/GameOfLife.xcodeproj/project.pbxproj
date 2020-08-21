@@ -13,6 +13,12 @@
 		FB5121C624EE15DA00F09F6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB5121C424EE15DA00F09F6D /* Main.storyboard */; };
 		FB5121C824EE15DF00F09F6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB5121C724EE15DF00F09F6D /* Assets.xcassets */; };
 		FB5121CB24EE15DF00F09F6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB5121C924EE15DF00F09F6D /* LaunchScreen.storyboard */; };
+		FB5121D724EE26E700F09F6D /* Array+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5121D624EE26E700F09F6D /* Array+.swift */; };
+		FB5121DA24EF5BB800F09F6D /* CellState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5121D924EF5BB800F09F6D /* CellState.swift */; };
+		FB5121DC24EF60AB00F09F6D /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5121DB24EF60AB00F09F6D /* Board.swift */; };
+		FB5121DE24EF6D1200F09F6D /* BoardPreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5121DD24EF6D1200F09F6D /* BoardPreset.swift */; };
+		FB5121E024EF6D8B00F09F6D /* LifeGameBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5121DF24EF6D8B00F09F6D /* LifeGameBoard.swift */; };
+		FB5121E324EF755E00F09F6D /* EnvironmentSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5121E224EF755E00F09F6D /* EnvironmentSettings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		FB5121C724EE15DF00F09F6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB5121CA24EE15DF00F09F6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB5121CC24EE15DF00F09F6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB5121D624EE26E700F09F6D /* Array+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+.swift"; sourceTree = "<group>"; };
+		FB5121D924EF5BB800F09F6D /* CellState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellState.swift; sourceTree = "<group>"; };
+		FB5121DB24EF60AB00F09F6D /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		FB5121DD24EF6D1200F09F6D /* BoardPreset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardPreset.swift; sourceTree = "<group>"; };
+		FB5121DF24EF6D8B00F09F6D /* LifeGameBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeGameBoard.swift; sourceTree = "<group>"; };
+		FB5121E224EF755E00F09F6D /* EnvironmentSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentSettings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,9 @@
 		FB5121BD24EE15DA00F09F6D /* GameOfLife */ = {
 			isa = PBXGroup;
 			children = (
+				FB5121E124EF751200F09F6D /* Environment */,
+				FB5121D824EF5B7F00F09F6D /* Model */,
+				FB5121D524EE267B00F09F6D /* Extensions */,
 				FB5121D324EE163600F09F6D /* Application */,
 				FB5121D224EE162900F09F6D /* Resources */,
 				FB5121C224EE15DA00F09F6D /* ViewController.swift */,
@@ -89,6 +104,33 @@
 				FB5121C924EE15DF00F09F6D /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FB5121D524EE267B00F09F6D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FB5121D624EE26E700F09F6D /* Array+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FB5121D824EF5B7F00F09F6D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB5121D924EF5BB800F09F6D /* CellState.swift */,
+				FB5121DB24EF60AB00F09F6D /* Board.swift */,
+				FB5121DD24EF6D1200F09F6D /* BoardPreset.swift */,
+				FB5121DF24EF6D8B00F09F6D /* LifeGameBoard.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FB5121E124EF751200F09F6D /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				FB5121E224EF755E00F09F6D /* EnvironmentSettings.swift */,
+			);
+			path = Environment;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,8 +204,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB5121E024EF6D8B00F09F6D /* LifeGameBoard.swift in Sources */,
 				FB5121C324EE15DA00F09F6D /* ViewController.swift in Sources */,
+				FB5121D724EE26E700F09F6D /* Array+.swift in Sources */,
+				FB5121DC24EF60AB00F09F6D /* Board.swift in Sources */,
+				FB5121DA24EF5BB800F09F6D /* CellState.swift in Sources */,
+				FB5121E324EF755E00F09F6D /* EnvironmentSettings.swift in Sources */,
 				FB5121BF24EE15DA00F09F6D /* AppDelegate.swift in Sources */,
+				FB5121DE24EF6D1200F09F6D /* BoardPreset.swift in Sources */,
 				FB5121C124EE15DA00F09F6D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

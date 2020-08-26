@@ -18,7 +18,6 @@
 		FB5121DC24EF60AB00F09F6D /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5121DB24EF60AB00F09F6D /* Board.swift */; };
 		FB5121DE24EF6D1200F09F6D /* BoardPreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5121DD24EF6D1200F09F6D /* BoardPreset.swift */; };
 		FB5121E024EF6D8B00F09F6D /* LifeGameBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5121DF24EF6D8B00F09F6D /* LifeGameBoard.swift */; };
-		FB5121E324EF755E00F09F6D /* EnvironmentSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5121E224EF755E00F09F6D /* EnvironmentSettings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +34,6 @@
 		FB5121DB24EF60AB00F09F6D /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
 		FB5121DD24EF6D1200F09F6D /* BoardPreset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardPreset.swift; sourceTree = "<group>"; };
 		FB5121DF24EF6D8B00F09F6D /* LifeGameBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeGameBoard.swift; sourceTree = "<group>"; };
-		FB5121E224EF755E00F09F6D /* EnvironmentSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentSettings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,7 +126,6 @@
 		FB5121E124EF751200F09F6D /* Environment */ = {
 			isa = PBXGroup;
 			children = (
-				FB5121E224EF755E00F09F6D /* EnvironmentSettings.swift */,
 			);
 			path = Environment;
 			sourceTree = "<group>";
@@ -209,7 +206,6 @@
 				FB5121D724EE26E700F09F6D /* Array+.swift in Sources */,
 				FB5121DC24EF60AB00F09F6D /* Board.swift in Sources */,
 				FB5121DA24EF5BB800F09F6D /* CellState.swift in Sources */,
-				FB5121E324EF755E00F09F6D /* EnvironmentSettings.swift in Sources */,
 				FB5121BF24EE15DA00F09F6D /* AppDelegate.swift in Sources */,
 				FB5121DE24EF6D1200F09F6D /* BoardPreset.swift in Sources */,
 				FB5121C124EE15DA00F09F6D /* SceneDelegate.swift in Sources */,
